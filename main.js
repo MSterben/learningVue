@@ -2,7 +2,9 @@ const app = Vue.createApp({
     data(){
         return {
             product: 'Socks',
-            discription: ' create by bavovna'
+            discription: ' create by bavovna',
+            image: '/assest/images/socks_blue.jpg',
+            url: 'https://www.google.com'
             
         }
     }    

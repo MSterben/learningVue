@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Vue Mastery</title>
     <!-- Import Styles -->
-    <link rel="stylesheet" href="./assest/styles.css" />
+    <link rel="stylesheet" href="/assest/styles.css" />
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
   </head>
@@ -15,10 +15,12 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <img :src="image" :alt="discription" >
+
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <a :href="url">Search on google</a>
             <p> {{discription}} </p>
           </div>
         </div>
