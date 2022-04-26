@@ -1,11 +1,11 @@
 const app = Vue.createApp({
     data(){
         return {
+            onSale:  true,
             brand:'Vue Mastery',
             cart: 0,
             product: 'Socks',
             discription: ' create by bavovna',
-            image: '/assest/images/socks_blue.jpg',
             url: 'https://www.google.com', 
             inventory: 0,
             onSale: true,
@@ -39,6 +39,12 @@ const app = Vue.createApp({
         },
         inStock(){
             return this.variants[this.selectedVariant].quantity
+        },
+        writeOnSale(){
+            if(this.onSale){
+            return this.brand + " " + this.product+ " is on sale" 
+            }
+            return ""
         }
     }
 }) 
